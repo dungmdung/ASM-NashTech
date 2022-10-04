@@ -17,7 +17,7 @@ namespace Assignment1
             listMember.Add(new Member{ FirstName = "Long",
                 LastName = "Le",
                 Gender = "Male",
-                DateOfBirth = new DateTime(2002, 9, 8),
+                DateOfBirth = new DateTime(1999, 9, 8),
                 BirthPlace = "Hai Phong",
                 PhoneNumber = "35646567",
                 IsGraduated = false});
@@ -33,7 +33,7 @@ namespace Assignment1
             listMember.Add(new Member{ FirstName = "Quynh",
                 LastName = "Do",
                 Gender = "Female",
-                DateOfBirth = new DateTime(2002, 9, 4),
+                DateOfBirth = new DateTime(2000, 9, 4),
                 BirthPlace = "Ha Noi",
                 PhoneNumber = "5324676879",
                 IsGraduated = false});
@@ -71,7 +71,7 @@ namespace Assignment1
 
         public static void FindYear()
         {
-            while(key != 4)
+            while(true)
             {
                 Console.WriteLine("1.List of members born in 2000: ");
                 Console.WriteLine("2.List of members born before 2000: ");
@@ -90,7 +90,7 @@ namespace Assignment1
                         {
                             if(mb.DateOfBirth.Year == 2000)
                             {
-                                Console.WriteLine(mb);
+                                Console.WriteLine(mb.Information);
                             }
                         }
                         break;
