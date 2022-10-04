@@ -7,7 +7,7 @@
 
             ManageMember.ListAllMember();
 
-            while(true)
+            while (true)
             {
                 Console.WriteLine("*************************MENU**************************");
                 Console.WriteLine("1.Show all member is male");
@@ -21,12 +21,12 @@
 
                 int key = Convert.ToInt32(Console.ReadLine());
 
-                switch(key)
+                switch (key)
                 {
                     case 1:
                         ManageMember.FindMale();
                         break;
-                    
+
                     case 2:
                         ManageMember.FindOldestAge();
                         break;
@@ -38,12 +38,12 @@
                     case 4:
                         ManageMember.FindYear();
                         break;
-                    
+
                     case 5:
                         ManageMember.FindFirstPersonWasBornHaNoi();
                         break;
-                    
-                    case 6: 
+
+                    case 6:
                         Environment.Exit(-1);
                         break;
                     default:

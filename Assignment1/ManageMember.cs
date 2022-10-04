@@ -6,45 +6,57 @@ namespace Assignment1
 
         public static void ListAllMember()
         {
-            listMember.Add(new Member{ FirstName = "Dung",
+            listMember.Add(new Member
+            {
+                FirstName = "Dung",
                 LastName = "Do",
                 Gender = "Male",
                 DateOfBirth = new DateTime(2001, 8, 21),
                 BirthPlace = "Ha Noi",
                 PhoneNumber = "24254535633",
-                IsGraduated = false});
+                IsGraduated = "Not graduated"
+            });
 
-            listMember.Add(new Member{ FirstName = "Long",
+            listMember.Add(new Member
+            {
+                FirstName = "Long",
                 LastName = "Le",
                 Gender = "Male",
-                DateOfBirth = new DateTime(1999, 9, 8),
+                DateOfBirth = new DateTime(1997, 9, 8),
                 BirthPlace = "Hai Phong",
                 PhoneNumber = "35646567",
-                IsGraduated = false});
-            
-            listMember.Add(new Member{ FirstName = "Linh",
+                IsGraduated = "Graduated"
+            });
+
+            listMember.Add(new Member
+            {
+                FirstName = "Linh",
                 LastName = "Tai",
                 Gender = "Male",
                 DateOfBirth = new DateTime(2001, 12, 1),
                 BirthPlace = "Ha Noi",
                 PhoneNumber = "476470942",
-                IsGraduated = false});
-            
-            listMember.Add(new Member{ FirstName = "Quynh",
+                IsGraduated = "Not graduated"
+            });
+
+            listMember.Add(new Member
+            {
+                FirstName = "Quynh",
                 LastName = "Do",
                 Gender = "Female",
                 DateOfBirth = new DateTime(2000, 9, 4),
                 BirthPlace = "Ha Noi",
                 PhoneNumber = "5324676879",
-                IsGraduated = false});
+                IsGraduated = "Not graduated"
+            });
         }
         public static void FindMale()
         {
-            foreach (Member mb in listMember)
+            foreach (Member member in listMember)
             {
-                if (mb.Gender == "Male")
+                if (member.Gender == "Male")
                 {
-                    Console.WriteLine(mb.Information);
+                    Console.WriteLine(member.InformationOfAll);
                 }
             }
         }
@@ -52,26 +64,26 @@ namespace Assignment1
         {
             Member Oldest = listMember.ElementAt(0);
 
-            foreach(Member mb in listMember)
+            foreach (Member member in listMember)
             {
-                if(mb.Age > Oldest.Age)
+                if (member.Age > Oldest.Age)
                 {
-                    Oldest = mb;
+                    Oldest = member;
                 }
             }
-            Console.WriteLine(Oldest.Information);
+            Console.WriteLine(Oldest.InformationOfAll);
         }
         public static void FullName()
         {
-            foreach(Member mb in listMember)
+            foreach (Member member in listMember)
             {
-                Console.WriteLine(mb.FirstName + " " + mb.LastName);
+                Console.WriteLine(member.FullName);
             }
         }
 
         public static void FindYear()
         {
-            while(true)
+            while (true)
             {
                 Console.WriteLine("1.List of members born in 2000: ");
                 Console.WriteLine("2.List of members born before 2000: ");
@@ -80,71 +92,71 @@ namespace Assignment1
                 Console.WriteLine("Select function : ");
 
                 int key = Convert.ToInt32(Console.ReadLine());
-                switch(key)
+                switch (key)
                 {
                     case 1:
-                    {
-                        Console.WriteLine("List of members born in 2000: ");
-
-                        foreach(Member mb in listMember)
                         {
-                            if(mb.DateOfBirth.Year == 2000)
+                            Console.WriteLine("List of members born in 2000: ");
+
+                            foreach (Member member in listMember)
                             {
-                                Console.WriteLine(mb.Information);
+                                if (member.DateOfBirth.Year == 2000)
+                                {
+                                    Console.WriteLine(member.InformationOfAll);
+                                }
                             }
+                            break;
                         }
-                        break;
-                    }
                     case 2:
-                    {
-                        Console.WriteLine("List of members born before 2000: ");
-
-                        foreach(Member mb in listMember)
                         {
-                            if(mb.DateOfBirth.Year < 2000)
+                            Console.WriteLine("List of members born before 2000: ");
+
+                            foreach (Member member in listMember)
                             {
-                                Console.WriteLine(mb.Information);
+                                if (member.DateOfBirth.Year < 2000)
+                                {
+                                    Console.WriteLine(member.InformationOfAll);
+                                }
                             }
+                            break;
                         }
-                        break;
-                    }
                     case 3:
-                    {
-                        Console.WriteLine("List of members born after 2000: ");
-
-                        foreach(Member mb in listMember)
                         {
-                            if(mb.DateOfBirth.Year > 2000)
+                            Console.WriteLine("List of members born after 2000: ");
+
+                            foreach (Member member in listMember)
                             {
-                                Console.WriteLine(mb.Information);
+                                if (member.DateOfBirth.Year > 2000)
+                                {
+                                    Console.WriteLine(member.InformationOfAll);
+                                }
                             }
+                            break;
                         }
-                        break;
-                    }
                     case 4:
-                    {
-                        return;
-                    }
+                        {
+                            return;
+                        }
                     default:
-                    {
-                        Console.WriteLine("This funtion is not available!");
-                        break;
-                    }
+                        {
+                            Console.WriteLine("This funtion is not available!");
+                            break;
+                        }
                 }
             }
         }
         public static void FindFirstPersonWasBornHaNoi()
         {
             int index = 0;
-            while(true) 
+            while (true)
             {
                 if (index >= listMember.Count) break;
 
-                var mb = listMember[index];
+                var member = listMember[index];
 
-                if (mb.BirthPlace == "Ha Noi")
+                if (member.BirthPlace == "Ha Noi")
                 {
-                    Console.WriteLine(mb.Information);
+                    Console.WriteLine(member.InformationOfAll);
                     break;
                 }
                 ++index;
