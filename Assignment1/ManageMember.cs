@@ -71,10 +71,15 @@ namespace Assignment1
 
         public static void FindYear()
         {
-            int key = 0;
             while(key != 4)
             {
-                key = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1.List of members born in 2000: ");
+                Console.WriteLine("2.List of members born before 2000: ");
+                Console.WriteLine("3.List of members born after 2000: ");
+                Console.WriteLine("4.Exit");
+                Console.WriteLine("Select function : ");
+
+                int key = Convert.ToInt32(Console.ReadLine());
                 switch(key)
                 {
                     case 1:
@@ -114,6 +119,15 @@ namespace Assignment1
                                 Console.WriteLine(mb.Information);
                             }
                         }
+                        break;
+                    }
+                    case 4:
+                    {
+                        return;
+                    }
+                    default:
+                    {
+                        Console.WriteLine("This funtion is not available!");
                         break;
                     }
                 }

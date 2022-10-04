@@ -32,7 +32,7 @@ namespace Assignment2
             listMember.Add(new Member{ FirstName = "Quynh",
                 LastName = "Do",
                 Gender = "Female",
-                DateOfBirth = new DateTime(2002, 9, 4),
+                DateOfBirth = new DateTime(2000, 9, 4),
                 BirthPlace = "Ha Noi",
                 PhoneNumber = "5324676879",
                 IsGraduated = false});
@@ -80,16 +80,19 @@ namespace Assignment2
         }
         public static void FindYear()
         {
-            int key = 0;
-            while(key != 4)
+            while(true)
             {
-                key = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1.List of members born in 2000: ");
+                Console.WriteLine("2.List of members born before 2000: ");
+                Console.WriteLine("3.List of members born after 2000: ");
+                Console.WriteLine("4.Exit");
+                Console.WriteLine("Select function : ");
+
+                int key = Convert.ToInt32(Console.ReadLine());
                 switch(key)
                 {
                     case 1:
                     {
-                        Console.WriteLine("List of members born in 2000: ");
-
                         var information = listMember.Where(
                             (mb) => {
                                 return mb.DateOfBirth.Year == 2000;
@@ -104,8 +107,6 @@ namespace Assignment2
                     }
                     case 2:
                     {
-                        Console.WriteLine("List of members born before 2000: ");
-
                         var information = listMember.Where(
                             (mb) => {
                                 return mb.DateOfBirth.Year < 2000;
@@ -120,8 +121,6 @@ namespace Assignment2
                     }
                     case 3:
                     {
-                        Console.WriteLine("List of members born after 2000: ");
-
                         var information = listMember.Where(
                             (mb) => {
                                 return mb.DateOfBirth.Year > 2000;
@@ -132,6 +131,15 @@ namespace Assignment2
                         {
                             Console.WriteLine(item.Information);
                         }
+                        break;
+                    }
+                    case 4:
+                    {
+                        return;
+                    }
+                    default:
+                    {
+                        Console.WriteLine("This funtion is not available!");
                         break;
                     }
                 }
