@@ -11,6 +11,5 @@ namespace Assignment3
             this.minute = minute;
             this.second = second;
         }
-
     }
 }

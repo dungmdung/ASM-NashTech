@@ -2,7 +2,6 @@ namespace FindPrimeNumber
 {
     public class PrimeNumber
     {
-        
         static void Number(int number, string message)
         {
             Console.WriteLine($"Start {message}");
