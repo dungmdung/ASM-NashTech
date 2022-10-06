@@ -1,0 +1,15 @@
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\bin\Debug\net6.0\FindPrimeNumber.exe
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\bin\Debug\net6.0\FindPrimeNumber.deps.json
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\bin\Debug\net6.0\FindPrimeNumber.runtimeconfig.json
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\bin\Debug\net6.0\FindPrimeNumber.dll
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\bin\Debug\net6.0\FindPrimeNumber.pdb
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.csproj.AssemblyReference.cache
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.AssemblyInfoInputs.cache
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.AssemblyInfo.cs
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.csproj.CoreCompileInputs.cache
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.dll
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\refint\FindPrimeNumber.dll
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.pdb
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\FindPrimeNumber.genruntimeconfig.cache
+D:\Rockies6\ASM-NashTech\Assignment3\FindPrimeNumber\obj\Debug\net6.0\ref\FindPrimeNumber.dll

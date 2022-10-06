@@ -1,0 +1,15 @@
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.csproj.AssemblyReference.cache
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.AssemblyInfoInputs.cache
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.AssemblyInfo.cs
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.csproj.CoreCompileInputs.cache
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\bin\Debug\net6.0\ClockTime.exe
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\bin\Debug\net6.0\ClockTime.deps.json
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\bin\Debug\net6.0\ClockTime.runtimeconfig.json
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\bin\Debug\net6.0\ClockTime.dll
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\bin\Debug\net6.0\ClockTime.pdb
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.dll
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\refint\ClockTime.dll
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.pdb
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ClockTime.genruntimeconfig.cache
+D:\Rockies6\ASM-NashTech\Assignment3\ClockTime\obj\Debug\net6.0\ref\ClockTime.dll
