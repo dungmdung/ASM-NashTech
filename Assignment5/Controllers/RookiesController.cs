@@ -5,7 +5,7 @@ using CsvHelper;
 
 namespace Assignment5.Controllers
 {
-    [Route("NashTech")]
+    [Route("NashTech/Rookies")]
     public class RookiesController : Controller
     {
         private static List<MembersModel> listMember = new List<MembersModel>
@@ -62,12 +62,16 @@ namespace Assignment5.Controllers
             _logger = logger;
         }
 
+        [Route("Index")]
+
         public IActionResult Index()
         {
             return Json(listMember);
         }
 
         #region #1
+
+        [Route("GetMaleMembers")]
 
         public IActionResult GetMaleMembers()
         {
@@ -78,6 +82,8 @@ namespace Assignment5.Controllers
         #endregion
 
         #region #2
+        
+        [Route("GetOldestMembers")]
 
         public IActionResult GetOldestMembers()
         {
@@ -90,6 +96,8 @@ namespace Assignment5.Controllers
 
         #region #3
 
+        [Route("GetFullName")]
+
         public IActionResult GetFullName()
         {
             var fullNames = listMember.Select(p => p.FullName);
@@ -99,6 +107,8 @@ namespace Assignment5.Controllers
         #endregion
 
         #region #4
+
+        [Route("GetNembersByBirthYear")]
 
         public IActionResult GetNembersByBirthYear(int year, string compareType)
         {
@@ -115,15 +125,21 @@ namespace Assignment5.Controllers
             }
         }
 
+        [Route("GetNembersByBirthYear/GetMembersWhoBornIn2000")]
+
         public IActionResult GetMembersWhoBornIn2000()
         {
             return RedirectToAction("GetNembersByBirthYear", new { year = 2000, compareType = "equals" });
         }
 
+        [Route("GetNembersByBirthYear/GetMembersWhoBornAfter2000")]
+
         public IActionResult GetMembersWhoBornAfter2000()
         {
             return RedirectToAction("GetNembersByBirthYear", new { year = 2000, compareType = "greaterthan" });
         }
+
+        [Route("GetNembersByBirthYear/GetMembersWhoBornBefore2000")]
 
         public IActionResult GetMembersWhoBornBefore2000()
         {
