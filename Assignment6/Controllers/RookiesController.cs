@@ -140,9 +140,7 @@ namespace Assignment6.Controllers
             if (index >= 0 && index < listMember.Count)
             {
                 listMember.RemoveAt(index);
-                ViewData["Index"] = index;
             }
-            
             return RedirectToAction("Index");
         }
     }

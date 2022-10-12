@@ -1,7 +1,5 @@
 ﻿@{
     ViewData["Title"] = "Rookies Page";
-    var value =ViewData["Index"]?.ToString() ?? "";
-    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
 }
 
 <div class="text-center">
@@ -34,33 +32,35 @@
                         <a class="btn btn-primary btn-sm" role="button" asp-controller="Rookies" asp-action="Edit"
                         asp-route-index="@i">Edit</a>
                         <a class="btn btn-danger btn-sm" href="#" role="button" data-toggle="modal"
-                        data-target="#exampleModal">Delete</a>
+                        data-target="#exampleModal_@i">Delete</a>
+
+                        <div class="modal fade" id="exampleModal_@i" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <form asp-controller="Rookies" asp-action="Delete" asp-route-index="@i"
+                                    method="post">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure!
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Confirm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
-</div>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <form asp-controller="Rookies" asp-action="Delete" asp-route-index="@index" method="post">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Are you sure!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Confirm</button>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
