@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj": {}
+    "d:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj": {}
   },
   "projects": {
-    "D:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj": {
+    "d:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj",
+        "projectUniqueName": "d:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj",
         "projectName": "Assignment6",
-        "projectPath": "D:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj",
+        "projectPath": "d:\\Rockies6\\ASM-NashTech\\Assignment6\\Assignment6.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "D:\\Rockies6\\ASM-NashTech\\Assignment6\\obj\\",
+        "outputPath": "d:\\Rockies6\\ASM-NashTech\\Assignment6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
