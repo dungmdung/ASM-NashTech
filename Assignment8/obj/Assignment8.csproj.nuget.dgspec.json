@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Rockies6\\ASM-NashTech\\Assignment7\\Assignment7.csproj": {}
+    "D:\\Rockies6\\Assignment8\\Assignment8.csproj": {}
   },
   "projects": {
-    "d:\\Rockies6\\ASM-NashTech\\Assignment7\\Assignment7.csproj": {
+    "D:\\Rockies6\\Assignment8\\Assignment8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Rockies6\\ASM-NashTech\\Assignment7\\Assignment7.csproj",
-        "projectName": "Assignment7",
-        "projectPath": "d:\\Rockies6\\ASM-NashTech\\Assignment7\\Assignment7.csproj",
+        "projectUniqueName": "D:\\Rockies6\\Assignment8\\Assignment8.csproj",
+        "projectName": "Assignment8",
+        "projectPath": "D:\\Rockies6\\Assignment8\\Assignment8.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "d:\\Rockies6\\ASM-NashTech\\Assignment7\\obj\\",
+        "outputPath": "D:\\Rockies6\\Assignment8\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
