@@ -2195,11 +2195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Rockies6\\Assignment10_EFcore\\Assignment10_EFcore.csproj",
+      "projectUniqueName": "d:\\Rockies6\\ASM-NashTech\\Assignment10_EFcore\\Assignment10_EFcore.csproj",
       "projectName": "Assignment10_EFcore",
-      "projectPath": "d:\\Rockies6\\Assignment10_EFcore\\Assignment10_EFcore.csproj",
+      "projectPath": "d:\\Rockies6\\ASM-NashTech\\Assignment10_EFcore\\Assignment10_EFcore.csproj",
       "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-      "outputPath": "d:\\Rockies6\\Assignment10_EFcore\\obj\\",
+      "outputPath": "d:\\Rockies6\\ASM-NashTech\\Assignment10_EFcore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

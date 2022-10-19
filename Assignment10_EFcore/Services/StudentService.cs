@@ -1,19 +1,17 @@
 using Assignment10_EFcore.DTOs;
 using Assignment10_EFcore.Models;
 using Assignment10_EFcore.Repositories;
-using Assignment10_EFcore.SaveChange;
+// using Assignment10_EFcore.SaveChange;
 
 namespace Assignment10_EFcore.Services
 {
     public class StudentService : IStudentService
     {
-        private readonly ISaveChange _saveChange;
-        private readonly IBaseRepository<Student> _studentRepository;
+        private readonly IStudentRepository _studentRepository;
 
-        public StudentService(ISaveChange saveChange)
+        public StudentService(IStudentRepository studentRepository)
         {
-            _saveChange = saveChange;
-            _studentRepository = saveChange.GetRepository<Student>();
+            _studentRepository = studentRepository;
         }
 
         public AddStudentResponse? Create(AddStudentRequest createModel)
@@ -28,14 +26,14 @@ namespace Assignment10_EFcore.Services
 
             var createdStudent = _studentRepository.Create(newStudent);
 
-            return _saveChange.SaveChanges() > 0 ?
-                new AddStudentResponse
-                {
-                    Id = createdStudent.Id,
-                    FirstName = createdStudent.FirstName,
-                    LastName = createdStudent.LastName
-                }
-                : null;
+            _studentRepository.SaveChanges();
+
+            return new AddStudentResponse
+            {
+                Id = createdStudent.Id,
+                FirstName = createdStudent.FirstName,
+                LastName = createdStudent.LastName
+            };
         }
 
         public bool Delete(int id)
@@ -46,7 +44,7 @@ namespace Assignment10_EFcore.Services
 
             bool isSucceeded = _studentRepository.Delete(deleteStudent);
 
-            isSucceeded &= _saveChange.SaveChanges() > 0;
+            _studentRepository.SaveChanges();
 
             return isSucceeded;
         }
@@ -54,7 +52,7 @@ namespace Assignment10_EFcore.Services
         public IEnumerable<GetStudentResponse> GetAll()
         {
             return _studentRepository
-                .GetAll(_ => true)
+                .GetAll(student => true)
                 .Select(student => new GetStudentResponse
                 {
                     Id = student.Id,
@@ -93,16 +91,16 @@ namespace Assignment10_EFcore.Services
             student.State = updateModel.State;
 
             var updatedStudent = _studentRepository.Update(student);
-
-            return _saveChange.SaveChanges() > 0
-                ? new UpdateStudentResponse
-                {
-                    FirstName = updatedStudent.FirstName,
-                    LastName = updatedStudent.LastName,
-                    City = updatedStudent.City,
-                    State = updatedStudent.State
-                }
-                : null;
+            
+            _studentRepository.SaveChanges();
+            
+            return new UpdateStudentResponse
+            {
+                FirstName = updatedStudent.FirstName,
+                LastName = updatedStudent.LastName,
+                City = updatedStudent.City,
+                State = updatedStudent.State
+            };
         }
     }
 }

@@ -10,5 +10,6 @@ namespace Assignment10_EFcore.Repositories
         T Create(T entity);
         T Update(T entity);
         bool Delete(T entity);
+        int SaveChanges();
     }
 }

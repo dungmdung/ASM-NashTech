@@ -1,16 +1,25 @@
 using Assignment10_EFcore.Models;
+using Assignment10_EFcore.Repositories;
+using Assignment10_EFcore.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<StudentManagementContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<StudentManagementContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")));
+
+builder.Services.AddTransient<IStudentService, StudentService>();
+
+builder.Services.AddTransient<IStudentRepository, StudentRepository>();
+
+builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
 var app = builder.Build();
 
