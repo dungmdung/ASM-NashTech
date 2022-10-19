@@ -23,11 +23,11 @@ namespace Assignment10_EFcore.Migrations
 
             modelBuilder.Entity("Assignment10_EFcore.Models.Student", b =>
                 {
-                    b.Property<int>("StudentId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
@@ -41,7 +41,7 @@ namespace Assignment10_EFcore.Migrations
                     b.Property<string>("State")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("StudentId");
+                    b.HasKey("Id");
 
                     b.ToTable("Students");
                 });

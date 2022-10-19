@@ -12,6 +12,7 @@ namespace Assignment10_EFcore.Repositories
         public BaseRepository(StudentManagementContext context)
         {
             _dbSet = context.Set<T>();
+            _context = context;
         }
 
         public T Create(T entity)

@@ -7,6 +7,6 @@ namespace Assignment10_EFcore.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public T Id { get; set; }
+        public T? Id { get; set; }
     }
 }
