@@ -1,9 +1,0 @@
-namespace Assignment11_EFcore.DTOs
-{
-    public class AddProduct
-    {
-        public string ProductName {get; set;}
-
-        public int CategoryId {get; set;}
-    }
-}

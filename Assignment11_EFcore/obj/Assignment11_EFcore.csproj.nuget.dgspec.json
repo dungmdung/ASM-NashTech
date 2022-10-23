@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj": {}
+    "d:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj": {}
   },
   "projects": {
-    "D:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj": {
+    "d:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj",
+        "projectUniqueName": "d:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj",
         "projectName": "Assignment11_EFcore",
-        "projectPath": "D:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj",
+        "projectPath": "d:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\Assignment11_EFcore.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "D:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\obj\\",
+        "outputPath": "d:\\Rockies6\\ASM-NashTech\\Assignment11_EFcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
