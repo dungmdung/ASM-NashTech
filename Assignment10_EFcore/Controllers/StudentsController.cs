@@ -21,25 +21,25 @@ namespace Assignment10_EFcore.Controllers
             return _studentService.GetAll();
         }
 
-        [HttpGet("GetAstudent/{id}")]
+        [HttpGet("get-a-student/{id}")]
         public GetStudentResponse? GetById(int id)
         {
             return _studentService.GetById(id);
         }
 
-        [HttpPost("NewStudent")]
+        [HttpPost("new-student")]
         public AddStudentResponse? Add([FromBody] AddStudentRequest requestModel)
         {
             return _studentService.Create(requestModel);
         }
 
-        [HttpPut("EditStudent/{id}")]
+        [HttpPut("edit-student/{id}")]
         public UpdateStudentResponse? Update(int id, [FromBody] UpdateStudentRequest requestModel)
         {
             return _studentService.Update(id, requestModel);
         }
 
-        [HttpDelete("Remove/{id}")]
+        [HttpDelete("remove/{id}")]
         public bool Delete(int id)
         {
             return _studentService.Delete(id);
