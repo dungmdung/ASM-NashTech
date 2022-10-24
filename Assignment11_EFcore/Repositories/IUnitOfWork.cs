@@ -1,5 +1,4 @@
-using Assignment11_EFcore.Data.Entities;
-using Assignment11_EFcore.Repositories;
+using Assignment11_EFcore.Models;
 
 namespace Assignment11_EFcore.Repositories;
 

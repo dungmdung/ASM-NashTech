@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Assignment11_EFcore.Data;
+using Assignment11_EFcore.Models;
 using Assignment11_EFcore.Repositories;
 using Assignment11_EFcore.Services;
 

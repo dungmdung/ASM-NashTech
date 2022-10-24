@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Assignment11_EFcore.Data.Entities;
+namespace Assignment11_EFcore.Models;
 
 public abstract class BaseEntity<T>
 {

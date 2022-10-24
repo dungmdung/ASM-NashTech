@@ -1,6 +1,5 @@
 using System.Linq.Expressions;
-using Assignment11_EFcore.Data;
-using Assignment11_EFcore.Data.Entities;
+using Assignment11_EFcore.Models;
 
 namespace Assignment11_EFcore.Repositories;
 

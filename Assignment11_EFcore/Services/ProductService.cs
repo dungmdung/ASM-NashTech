@@ -1,4 +1,4 @@
-using Assignment11_EFcore.Data.Entities;
+using Assignment11_EFcore.Models;
 using Assignment11_EFcore.DTOs;
 using Assignment11_EFcore.Repositories;
 

@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Assignment11_EFcore.Data.Entities;
 
-namespace Assignment11_EFcore.Data;
+namespace Assignment11_EFcore.Models;
 
 public class ProductStoreContext : DbContext
 {
