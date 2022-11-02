@@ -1,0 +1,6 @@
+D:\Rockies6\UnitTest\RookiesControllerTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\Rockies6\UnitTest\RookiesControllerTest\obj\Debug\net6.0\RookiesControllerTest.csproj.AssemblyReference.cache
+D:\Rockies6\UnitTest\RookiesControllerTest\obj\Debug\net6.0\RookiesControllerTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rockies6\UnitTest\RookiesControllerTest\obj\Debug\net6.0\RookiesControllerTest.AssemblyInfoInputs.cache
+D:\Rockies6\UnitTest\RookiesControllerTest\obj\Debug\net6.0\RookiesControllerTest.AssemblyInfo.cs
+D:\Rockies6\UnitTest\RookiesControllerTest\obj\Debug\net6.0\RookiesControllerTest.csproj.CoreCompileInputs.cache
